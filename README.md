@@ -1,7 +1,7 @@
 # Fronted-sv
 
 Este proyecto es el frontend de una aplicación web desarrollada durante mi semestre universitario para una Institución Prestadora de Servicios de Salud (IPS). Su objetivo principal es ofrecer a los usuarios una experiencia intuitiva y fluida, facilitando el acceso a información relevante y servicios de salud de manera eficiente y amigable.
-Descripción breve del proyecto. Explica qué hace, su propósito y a quién está dirigido.
+
 
 ## Estado del Proyecto
 El proyecto se encuentra actualmente en desarrollo. Mi objetivo es seguir implementando funcionalidades que lo hagan más completo y robusto. Aunque ya cuenta con algunos CRUDs básicos, aún hay muchas historias de usuario por desarrollar, asi que vamos a darle con todo la actitud.
