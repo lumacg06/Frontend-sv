@@ -1,12 +1,14 @@
-// src/PacientesApp.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
-import './PacientesApp.css'; // Asegúrate de tener este archivo CSS para los estilos
+import './PacientesApp.css';
+// import RegistroPaciente from './RegistroPaciente';
+// import FormularioGenerico from './FormularioGenerico';
 
 const PacientesApp = () => {
   const [pacientes, setPacientes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchPacientes = async () => {
@@ -14,11 +16,7 @@ const PacientesApp = () => {
         const response = await axios.get('http://localhost:8080/api/pacientes');
         setPacientes(response.data);
       } catch (err) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: err.message,
-        });
+        setError(err.message);
       } finally {
         setLoading(false);
       }
@@ -38,7 +36,8 @@ const PacientesApp = () => {
     });
   }, []);
 
-  if (loading) return null; // No mostrar nada mientras se carga
+  if (loading) return <div>Cargando...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   return (
     <div className="pacientes-app-container">

@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MunicipiosApp from "./components/componentsMuncipios/MunicipiosApp";
 import OcupacionesApp from "./components/componentsOcupacion/OcupacionesApp";
+import PacientesApp from "./components/componentsPacientes/PacientesApp";
 
 // Importar las imágenes
 import mejorH from "./Imagenes/MejorH.jpg";
@@ -104,6 +105,14 @@ const App = () => {
                     Ocupaciones
                   </Nav.Link>
                   <Nav.Link
+                    as={Link}
+                    to="/paciente"
+                    className="nav-link"
+                    onClick={handleClose}
+                  >
+                    Regustro de pacientes
+                  </Nav.Link>
+                  <Nav.Link
                     href="#contacto"
                     className="nav-link"
                     onClick={handleClose}
@@ -126,6 +135,7 @@ const App = () => {
               <Route path="/paises" element={<PaisesApp />} />
               <Route path="/municipios" element={<MunicipiosApp />} />
               <Route path="/ocupaciones" element={<OcupacionesApp />} />
+              <Route path="/paciente" element={<PacienteApp />} />
               <Route
                 path="/"
                 element={
