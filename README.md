@@ -28,7 +28,7 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
 
 ## Agradecimiento
 
-Quiero expresar mi sincero agradecimiento a mí misma por la fuerza de voluntad y la paciencia que he demostrado durante el desarrollo de este proyecto. Este esfuerzo personal ha sido fundamental para llevarlo a cabo.
+Quiero expresar mi sincero agradecimiento a mí misma por la fuerza de voluntad y la paciencia que he demostrado durante el desarrollo de este proyecto. Este esfuerzo personal ha sido fundamental para llevarlo a cabo y lo mas importante ir aprendiendo un poco más cada dia.
 
 ## Contribuciones
 
