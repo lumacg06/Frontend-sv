@@ -1,0 +1,32 @@
+/* src/PacientesApp.css */
+
+.pacientes-app-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pacientes-app-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .pacientes-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .paciente-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .paciente-item:hover {
+    background-color: #f0f0f0;
+  }

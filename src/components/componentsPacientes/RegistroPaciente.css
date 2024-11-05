@@ -1,0 +1,53 @@
+/* src/RegistroPaciente.css */
+
+.registro-paciente-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registro-paciente-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .registro-paciente-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-input, .form-select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .form-input:focus, .form-select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .form-submit-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-submit-button:hover {
+    background-color: #0056b3;
+  }
