@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import './PacientesApp.css'; // Asegúrate de tener este archivo CSS para los estilos
 
 const PacientesApp = () => {
   const [pacientes, setPacientes] = useState([]);
@@ -40,11 +41,13 @@ const PacientesApp = () => {
   if (loading) return null; // No mostrar nada mientras se carga
 
   return (
-    <div>
-      <h1>Lista de Pacientes</h1>
-      <ul>
+    <div className="pacientes-app-container">
+      <h1 className="pacientes-app-title">Lista de Pacientes</h1>
+      <ul className="pacientes-list">
         {pacientes.map((paciente) => (
-          <li key={paciente.id}>{paciente.nombre}</li>
+          <li key={paciente.id} className="paciente-item">
+            {paciente.nombre}
+          </li>
         ))}
       </ul>
     </div>
