@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import './PacientesApp.css';
-// import RegistroPaciente from './RegistroPaciente';
-// import FormularioGenerico from './FormularioGenerico';
 
 const PacientesApp = () => {
   const [pacientes, setPacientes] = useState([]);
@@ -15,8 +13,8 @@ const PacientesApp = () => {
       try {
         const response = await axios.get('http://localhost:8080/api/pacientes');
         setPacientes(response.data);
-      } catch (err) {
-        setError(err.message);
+      } catch (error) {
+        setError(error.message);
       } finally {
         setLoading(false);
       }
@@ -45,7 +43,7 @@ const PacientesApp = () => {
       <ul className="pacientes-list">
         {pacientes.map((paciente) => (
           <li key={paciente.id} className="paciente-item">
-            {paciente.nombre}
+            {paciente.nombre} {paciente.apellido}
           </li>
         ))}
       </ul>

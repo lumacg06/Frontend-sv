@@ -143,7 +143,7 @@ const PaisesApp = () => {
       </button>
 
       <PaisesTable
-        paises={filteredPaises} // Usar la lista filtrada
+        paises={filteredPaises} 
         onDelete={handleDelete}
         onEdit={handleEdit}
         className="paises-table"
@@ -155,7 +155,7 @@ const PaisesApp = () => {
             <PaisModal
               pais={editing || { codigoiso: "", nombre: "" }}
               onSave={handleSave}
-              onClose={handleCloseModal} // Asegúrate de que esto sea onClose
+              onClose={handleCloseModal} 
               className="paises-modal"
             />
           </div>
