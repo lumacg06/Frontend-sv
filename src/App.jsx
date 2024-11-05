@@ -110,7 +110,7 @@ const App = () => {
                     className="nav-link"
                     onClick={handleClose}
                   >
-                    Regustro de pacientes
+                    Registro de pacientes
                   </Nav.Link>
                   <Nav.Link
                     href="#contacto"
@@ -135,7 +135,7 @@ const App = () => {
               <Route path="/paises" element={<PaisesApp />} />
               <Route path="/municipios" element={<MunicipiosApp />} />
               <Route path="/ocupaciones" element={<OcupacionesApp />} />
-              <Route path="/paciente" element={<PacienteApp />} />
+              <Route path="/paciente" element={<PacientesApp />} />
               <Route
                 path="/"
                 element={
